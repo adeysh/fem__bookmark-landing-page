@@ -38,13 +38,144 @@
     <body
         class="relative mx-auto overflow-x-hidden font-primary text-(length:--font-body)"
     >
-        <header class="container mx-auto hidden px-4">
-            Features Pricing Contact Login
+        <header class="container mx-auto px-4 pt-8 pb-16 md:pt-0 md:pb-0">
+            <nav class="flex items-center justify-between md:flex-row">
+                <a href="/" title="Home">
+                    <img src="/images/logos/logo-bookmark.svg" alt="logo" />
+                </a>
+
+                <div
+                    class="absolute inset-0 z-1 hidden flex-col items-center gap-12 overflow-hidden bg-(--color-950)/96 px-8 py-12 tracking-widest md:static md:flex md:flex-row md:gap-16 md:bg-transparent md:py-8 md:tracking-normal md:backdrop-blur-none"
+                    id="nav-links"
+                >
+                    <div
+                        class="flex w-full items-center justify-between md:hidden"
+                    >
+                        <a href="/" title="Home">
+                            <svg
+                                width="148"
+                                height="25"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                                        fill="var(--color-grey-50)"
+                                        fill-rule="nonzero"
+                                    />
+                                    <g>
+                                        <circle
+                                            fill="var(--color-grey-50)"
+                                            cx="12.5"
+                                            cy="12.5"
+                                            r="12.5"
+                                        />
+                                        <path
+                                            d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+                                            fill="var(--color-950)"
+                                        />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+
+                        <img
+                            src="/images/icons/icon-close.svg"
+                            alt="close"
+                            id="toggle-menu-close-btn"
+                            class="cursor-pointer"
+                            title="Close menu"
+                        />
+                    </div>
+
+                    <div class="w-full">
+                        <ul
+                            class="flex flex-col items-center gap-0 text-xl text-(--color-grey-50) uppercase md:flex-row md:gap-12 md:text-(length:--font-body) md:text-(--color-950)"
+                        >
+                            <li
+                                class="flex w-full justify-center border-b border-gray-500 py-4 first:border-t md:border-0 md:py-0 md:first:border-0"
+                            >
+                                <a
+                                    href="#"
+                                    class="transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-(--color-red-400)"
+                                >
+                                    Features
+                                </a>
+                            </li>
+
+                            <li
+                                class="flex w-full justify-center border-b border-gray-500 py-4 md:border-0 md:py-0"
+                            >
+                                <a
+                                    href="#"
+                                    class="transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-(--color-red-400)"
+                                >
+                                    Pricing
+                                </a>
+                            </li>
+
+                            <li
+                                class="flex w-full justify-center border-b border-gray-500 py-4 md:border-0 md:py-0"
+                            >
+                                <a
+                                    href="#"
+                                    class="transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-(--color-red-400)"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex w-full items-stretch">
+                        <button
+                            type="button"
+                            class="w-full cursor-pointer rounded-md border-2 bg-transparent px-8 py-2 text-xl font-medium text-(--color-grey-50) uppercase shadow-lg transition-colors duration-300 ease-in-out hover:bg-transparent hover:text-(--color-red-400) md:bg-(--color-red-400) md:font-body md:text-(length:--font-body)"
+                        >
+                            Login
+                        </button>
+                    </div>
+
+                    <div
+                        class="mt-[calc(20vh)] flex items-center gap-8 md:mt-0 md:hidden"
+                    >
+                        <svg
+                            class="cursor-pointer fill-(--color-grey-50) transition-colors duration-300 ease-in-out hover:fill-(--color-red-400)"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                            />
+                        </svg>
+
+                        <svg
+                            class="cursor-pointer fill-(--color-grey-50) transition-colors duration-300 ease-in-out hover:fill-(--color-red-400)"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer md:hidden" id="toggle-menu-btn">
+                    <img
+                        src="/images/icons/icon-hamburger.svg"
+                        alt="hamburger"
+                        title="Open menu"
+                    />
+                </div>
+            </nav>
         </header>
 
-        <main
-            class="container mx-auto flex flex-col items-center gap-32 px-4 lg:gap-40"
-        >
+        <main class="container mx-auto flex flex-col gap-32 px-4 lg:gap-40">
             <!-- hero section -->
             <section
                 class="flex flex-col items-center gap-16 xl:flex-row-reverse xl:justify-center"
@@ -77,14 +208,14 @@
                     <div class="flex items-center justify-center gap-4">
                         <button
                             type="button"
-                            class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg"
+                            class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
                         >
                             Get it on Chrome
                         </button>
 
                         <button
                             type="button"
-                            class="rounded-md bg-(--color-grey-50) px-4 py-2 font-medium text-(--color-950) shadow-lg"
+                            class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-grey-50) px-4 py-2 font-medium text-(--color-950) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-950) hover:bg-transparent hover:text-(--color-950)"
                         >
                             Get it on Firefox
                         </button>
@@ -111,14 +242,15 @@
                 <!-- tabs -->
                 <div class="w-full px-4 text-center text-gray-500">
                     <ul
-                        class="-mb-px flex inline-flex flex-col flex-wrap gap-25 border-gray-300 xl:flex-row xl:items-center xl:justify-center xl:border-b-1"
+                        class="-mb-px inline-flex w-full flex-col flex-wrap gap-0 border-gray-300 xl:flex-row xl:items-center xl:justify-center xl:gap-25 xl:border-b-1"
                     >
                         <li
                             class="me-2 border-b-1 border-gray-300 first:border-t-1 xl:me-0 xl:border-0 xl:first:border-t-0"
                         >
                             <a
                                 href="#"
-                                class="inline-block rounded-t-lg border-b-2 border-transparent px-8 py-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+                                data-tab="bookmarking"
+                                class="active inline-block rounded-t-lg border-b-4 border-(--color-red-400) px-8 py-4 text-(--color-950) transition-colors duration-300 ease-in-out"
                                 >Simple Bookmarking</a
                             >
                         </li>
@@ -127,7 +259,8 @@
                         >
                             <a
                                 href="#"
-                                class="active inline-block rounded-t-lg border-b-4 border-(--color-red-400) px-8 py-4 text-(--color-950)"
+                                data-tab="searching"
+                                class="inline-block rounded-t-lg border-b-2 border-transparent px-8 py-4 transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                                 aria-current="page"
                                 >Speedy Searching</a
                             >
@@ -137,130 +270,137 @@
                         >
                             <a
                                 href="#"
-                                class="inline-block rounded-t-lg border-b-2 border-transparent px-8 py-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+                                data-tab="sharing"
+                                class="inline-block rounded-t-lg border-b-2 border-transparent px-8 py-4 transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                                 >Easy Sharing</a
                             >
                         </li>
                     </ul>
                 </div>
 
-                <!-- tab-1 -->
-                <div
-                    class="flex flex-col items-center gap-24 sm:gap-30 xl:flex-row"
-                >
+                <div id="tab-content-wrapper">
+                    <!-- tab-1 -->
                     <div
-                        class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-35 lg:before:-ml-4 lg:before:w-165 xl:before:-ml-16 xl:before:w-135"
+                        class="flex flex-col items-center gap-24 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
+                        id="bookmarking"
                     >
-                        <img
-                            class="h-auto w-85 max-w-full sm:w-auto"
-                            src="/images/illustrations/illustration-features-tab-1.svg"
-                            alt="tablet view of app"
-                        />
+                        <div
+                            class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-35 lg:before:-ml-4 lg:before:w-165 xl:before:-ml-16 xl:before:w-135"
+                        >
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-1.svg"
+                                alt="tablet view of app"
+                            />
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
+                        >
+                            <h2
+                                class="text-2xl font-medium text-(--color-950) xl:text-3xl"
+                            >
+                                Bookmark in one click
+                            </h2>
+
+                            <p
+                                class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
+                            >
+                                Organize your bookmarks however you like. Our
+                                simple drag-and-drop interface gives you
+                                complete control over how you manage your
+                                favourite sites.
+                            </p>
+
+                            <button
+                                type="button"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
+                            >
+                                More Info
+                            </button>
+                        </div>
                     </div>
 
+                    <!-- tab-2 -->
                     <div
-                        class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
+                        class="pointer-events-none absolute top-0 left-0 flex scale-95 flex-col items-center gap-24 opacity-0 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
+                        id="searching"
                     >
-                        <h2
-                            class="text-2xl font-medium text-(--color-950) xl:text-3xl"
+                        <div
+                            class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-60 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
                         >
-                            Bookmark in one click
-                        </h2>
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-2.svg"
+                                alt="tablet view of app"
+                            />
+                        </div>
 
-                        <p
-                            class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
+                        <div
+                            class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
                         >
-                            Organize your bookmarks however you like. Our simple
-                            drag-and-drop interface gives you complete control
-                            over how you manage your favourite sites.
-                        </p>
+                            <h2
+                                class="text-2xl font-medium text-(--color-950) xl:text-3xl"
+                            >
+                                Intelligent search
+                            </h2>
 
-                        <button
-                            type="button"
-                            class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg"
-                        >
-                            More Info
-                        </button>
-                    </div>
-                </div>
+                            <p
+                                class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
+                            >
+                                Our powerful search feature will help you find
+                                saved sites in no time at all. No need to trawl
+                                through all of your bookmarks.
+                            </p>
 
-                <!-- tab-2 -->
-                <div
-                    class="flex flex-col items-center gap-24 sm:gap-30 xl:flex-row"
-                >
-                    <div
-                        class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-60 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
-                    >
-                        <img
-                            class="h-auto w-85 max-w-full sm:w-auto"
-                            src="/images/illustrations/illustration-features-tab-2.svg"
-                            alt="tablet view of app"
-                        />
-                    </div>
-
-                    <div
-                        class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
-                    >
-                        <h2
-                            class="text-2xl font-medium text-(--color-950) xl:text-3xl"
-                        >
-                            Intelligent search
-                        </h2>
-
-                        <p
-                            class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
-                        >
-                            Our powerful search feature will help you find saved
-                            sites in no time at all. No need to trawl through
-                            all of your bookmarks.
-                        </p>
-
-                        <button
-                            type="button"
-                            class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50)"
-                        >
-                            More Info
-                        </button>
-                    </div>
-                </div>
-
-                <!-- tab-3 -->
-                <div
-                    class="flex flex-col items-center gap-24 sm:gap-30 xl:flex-row"
-                >
-                    <div
-                        class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-50 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
-                    >
-                        <img
-                            class="h-auto w-85 max-w-full sm:w-auto"
-                            src="/images/illustrations/illustration-features-tab-3.svg"
-                            alt="tablet view of app"
-                        />
+                            <button
+                                type="button"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
+                            >
+                                More Info
+                            </button>
+                        </div>
                     </div>
 
+                    <!-- tab-3 -->
                     <div
-                        class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
+                        class="pointer-events-none absolute top-0 left-0 flex scale-95 flex-col items-center gap-24 opacity-0 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
+                        id="sharing"
                     >
-                        <h2
-                            class="text-2xl font-medium text-(--color-950) xl:text-3xl"
+                        <div
+                            class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-50 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
                         >
-                            Share your bookmarks
-                        </h2>
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-3.svg"
+                                alt="tablet view of app"
+                            />
+                        </div>
 
-                        <p
-                            class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
+                        <div
+                            class="flex flex-col items-center gap-4 xl:max-w-[500px] xl:items-start"
                         >
-                            Easily share your bookmarks and collections with
-                            others. Create a shareable link that you can send at
-                            the click of a button.
-                        </p>
+                            <h2
+                                class="text-2xl font-medium text-(--color-950) xl:text-3xl"
+                            >
+                                Share your bookmarks
+                            </h2>
 
-                        <button
-                            type="button"
-                            class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50)"
-                        >
-                            More Info
-                        </button>
+                            <p
+                                class="px-4 text-(--color-950)/50 xl:px-0 xl:text-left"
+                            >
+                                Easily share your bookmarks and collections with
+                                others. Create a shareable link that you can
+                                send at the click of a button.
+                            </p>
+
+                            <button
+                                type="button"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
+                            >
+                                More Info
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -314,7 +454,7 @@
                         <div class="p-6">
                             <button
                                 type="button"
-                                class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
                             >
                                 Add & Install Extension
                             </button>
@@ -352,7 +492,7 @@
                         <div class="p-6">
                             <button
                                 type="button"
-                                class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
                             >
                                 Add & Install Extension
                             </button>
@@ -390,7 +530,7 @@
                         <div class="p-6">
                             <button
                                 type="button"
-                                class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md"
+                                class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-md transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
                             >
                                 Add & Install Extension
                             </button>
@@ -419,13 +559,13 @@
                 <div
                     id="accordion-collapse"
                     data-accordion="collapse"
-                    class="xl:w-full"
+                    class="mx-auto flex min-w-lg flex-col"
                 >
                     <!-- Question 1 -->
                     <h2 id="accordion-collapse-heading-1">
                         <button
                             type="button"
-                            class="flex w-full items-center justify-between gap-3 border-b border-gray-200 py-5 text-(--color-950) hover:text-(--color-red-400)"
+                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                             data-accordion-target="#accordion-collapse-body-1"
                             aria-expanded="true"
                             aria-controls="accordion-collapse-body-1"
@@ -450,7 +590,7 @@
                     <!-- Answer 1 -->
                     <div
                         id="accordion-collapse-body-1"
-                        class="hidden"
+                        class="hidden max-w-lg"
                         aria-labelledby="accordion-collapse-heading-1"
                     >
                         <div class="border border-b-0 border-gray-200 p-5">
@@ -467,7 +607,7 @@
                     <h2 id="accordion-collapse-heading-2">
                         <button
                             type="button"
-                            class="flex w-full items-center justify-between gap-3 border-b border-gray-200 py-5 text-(--color-950) hover:text-(--color-red-400)"
+                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                             data-accordion-target="#accordion-collapse-body-2"
                             aria-expanded="false"
                             aria-controls="accordion-collapse-body-2"
@@ -492,7 +632,7 @@
                     <!-- Answer 2 -->
                     <div
                         id="accordion-collapse-body-2"
-                        class="hidden"
+                        class="hidden max-w-lg"
                         aria-labelledby="accordion-collapse-heading-2"
                     >
                         <div
@@ -515,7 +655,7 @@
                     <h2 id="accordion-collapse-heading-3">
                         <button
                             type="button"
-                            class="flex w-full items-center justify-between gap-3 border-b border-gray-200 py-5 text-(--color-950) hover:text-(--color-red-400)"
+                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                             data-accordion-target="#accordion-collapse-body-3"
                             aria-expanded="false"
                             aria-controls="accordion-collapse-body-3"
@@ -540,7 +680,7 @@
                     <!-- Answer 3 -->
                     <div
                         id="accordion-collapse-body-3"
-                        class="hidden"
+                        class="hidden max-w-lg"
                         aria-labelledby="accordion-collapse-heading-3"
                     >
                         <div
@@ -561,7 +701,7 @@
                     <h2 id="accordion-collapse-heading-4">
                         <button
                             type="button"
-                            class="flex w-full items-center justify-between gap-3 border-b border-gray-200 py-5 text-(--color-950) hover:text-(--color-red-400)"
+                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
                             data-accordion-target="#accordion-collapse-body-4"
                             aria-expanded="false"
                             aria-controls="accordion-collapse-body-3"
@@ -586,7 +726,7 @@
                     <!-- Answer 4 -->
                     <div
                         id="accordion-collapse-body-4"
-                        class="hidden"
+                        class="hidden max-w-lg"
                         aria-labelledby="accordion-collapse-heading-4"
                     >
                         <div
@@ -604,7 +744,7 @@
 
                 <button
                     type="button"
-                    class="rounded-md bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg"
+                    class="cursor-pointer rounded-md border-2 border-transparent bg-(--color-blue-600) px-4 py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out hover:border-2 hover:border-(--color-blue-600) hover:bg-transparent hover:text-(--color-blue-600)"
                 >
                     More Info
                 </button>
@@ -612,7 +752,7 @@
 
             <!-- cta section -->
             <section
-                class="-mx-4 flex w-screen flex-col items-center gap-8 bg-(--color-blue-600) px-8 py-16"
+                class="relative left-1/2 flex w-screen -translate-x-1/2 flex-col items-center gap-8 bg-(--color-blue-600) px-8 py-16"
             >
                 <div class="flex max-w-[350px] flex-col gap-8 text-center">
                     <p
@@ -627,24 +767,51 @@
                     </h2>
                 </div>
 
-                <div
-                    class="flex w-full flex-col items-center gap-4 sm:w-75 lg:w-100 lg:flex-row lg:justify-center"
+                <form
+                    novalidate
+                    class="group flex w-full flex-col items-center justify-between gap-8 transition-colors duration-300 ease-in-out sm:w-75 lg:w-120 lg:flex-row lg:justify-center lg:gap-4"
+                    id="contact-form"
                 >
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Enter your email address"
-                        class="h-10 w-full flex-2 rounded-sm bg-(--color-grey-50) px-4 py-4 placeholder:text-(--color-950)/25 invalid:border-(--color-red-400) invalid:text-(--color-red-400)"
-                    />
+                    <div class="relative w-full flex-2">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="Enter your email address"
+                            class="peer focus:border-primary focus:ring-primary h-10 w-full rounded-sm bg-(--color-grey-50) px-4 py-4 transition-colors duration-300 ease-in-out placeholder:text-(--color-950)/25 group-[.validated]:invalid:border-2 group-[.validated]:invalid:border-(--color-red-400) group-[.validated]:invalid:text-(--color-red-400) focus:shadow-lg"
+                        />
+
+                        <div
+                            class="pointer-events-none absolute inset-y-0 end-0 hidden items-center pe-3.5 group-[.validated]:peer-invalid:flex"
+                            id="error-icon"
+                        >
+                            <img
+                                src="/images/icons/icon-error.svg"
+                                alt="error"
+                            />
+                        </div>
+
+                        <p
+                            class="absolute hidden w-full rounded-b-md bg-(--color-red-400) px-2 py-1 text-xs font-medium tracking-wider text-(--color-grey-50) italic group-[.validated]:peer-invalid:peer-placeholder-shown:block"
+                        >
+                            Please provide your email.
+                        </p>
+                        <p
+                            class="absolute hidden w-full rounded-b-md bg-(--color-red-400) px-2 py-1 text-xs font-medium tracking-wider text-(--color-grey-50) italic group-[.validated]:peer-[:not(:placeholder-shown)]:peer-invalid:block"
+                        >
+                            Please enter a valid email address.
+                        </p>
+                        <!-- <div id="result"></div> -->
+                    </div>
 
                     <button
-                        type="button"
-                        class="w-full flex-1 rounded-md bg-(--color-red-400) py-2 font-medium text-(--color-grey-50)"
+                        type="submit"
+                        class="w-full flex-1 cursor-pointer rounded-md border-2 border-transparent bg-(--color-red-400) py-2 font-medium text-(--color-grey-50) shadow-lg transition-colors duration-300 ease-in-out outline-none hover:border-2 hover:border-(--color-red-400) hover:bg-(--color-grey-50) hover:text-(--color-red-400) focus:ring-1 [.validated_&]:invalid:border-pink-600 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-pink-200"
                     >
                         Contact Us
                     </button>
-                </div>
+                </form>
             </section>
         </main>
 
@@ -655,50 +822,79 @@
                 class="container mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row lg:justify-between"
             >
                 <div class="flex items-center gap-16">
-                    <svg
-                        width="148"
-                        height="25"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <g fill="none" fill-rule="evenodd">
-                            <path
-                                d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
-                                fill="currentColor"
-                                fill-rule="nonzero"
-                            />
-                            <g>
-                                <circle
-                                    fill="#5267DF"
-                                    cx="12.5"
-                                    cy="12.5"
-                                    r="12.5"
-                                />
+                    <a href="/">
+                        <svg
+                            width="148"
+                            height="25"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g fill="none" fill-rule="evenodd">
                                 <path
-                                    d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
-                                    fill="#FFF"
+                                    d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                                    fill="currentColor"
+                                    fill-rule="nonzero"
                                 />
+                                <g>
+                                    <circle
+                                        fill="#5267DF"
+                                        cx="12.5"
+                                        cy="12.5"
+                                        r="12.5"
+                                    />
+                                    <path
+                                        d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+                                        fill="#FFF"
+                                    />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
+                    </a>
 
                     <ul
                         class="flex flex-col items-center gap-8 text-sm uppercase md:flex-row"
                     >
-                        <li>Features</li>
-                        <li>Pricing</li>
-                        <li>Contact</li>
+                        <li
+                            class="cursor-pointer transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                        >
+                            Features
+                        </li>
+                        <li
+                            class="cursor-pointer transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                        >
+                            Pricing
+                        </li>
+                        <li
+                            class="cursor-pointer transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                        >
+                            Contact
+                        </li>
                     </ul>
                 </div>
 
-                <div class="flex gap-8">
-                    <img
-                        src="/images/icons/icon-facebook.svg"
-                        alt="facebook icon"
-                    />
-                    <img
-                        src="/images/icons/icon-twitter.svg"
-                        alt="twitter icon"
-                    />
+                <div class="flex items-center gap-8">
+                    <svg
+                        class="cursor-pointer fill-(--color-grey-50) transition-colors duration-300 ease-in-out hover:fill-(--color-red-400)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                        />
+                    </svg>
+
+                    <svg
+                        class="cursor-pointer fill-(--color-grey-50) transition-colors duration-300 ease-in-out hover:fill-(--color-red-400)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="20"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+                        />
+                    </svg>
                 </div>
             </div>
         </footer>
