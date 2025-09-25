@@ -7,4 +7,5 @@
     --color-950: hsl(229, 31%, 21%);
 
     --font-primary: "Rubik", sans-serif;
+    --font-body: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
 }
