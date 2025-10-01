@@ -7,6 +7,7 @@ const navLinks = document.getElementById("nav-links");
 const form = document.getElementById("contact-form");
 const tabLinks = document.querySelectorAll("[data-tab]");
 const tabContentPanes = document.querySelectorAll("#tab-content-wrapper > div");
+const accordionContainer = document.getElementById("accordion-collapse");
 const accordionButtons = document.querySelectorAll("[data-accordion-target]");
 
 toggleMenuBtn.addEventListener("click", (e) => {
@@ -119,10 +120,35 @@ accordionButtons.forEach((button) => {
         const targetBody = document.querySelector(targetId);
         const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-        // Toggle the 'hidden' class on the body
-        targetBody.classList.toggle("hidden");
+        const svgIcon = button.querySelector("svg");
 
-        // Update the aria-expanded state for accessibility
+        if (accordionContainer.getAttribute("data-accordion") === "collapse") {
+            accordionButtons.forEach((otherButton) => {
+                const otherTargetId = otherButton.getAttribute(
+                    "data-accordion-target",
+                );
+                const otherTargetBody = document.querySelector(otherTargetId);
+                if (otherTargetBody !== targetBody) {
+                    otherTargetBody.classList.remove("max-h-[500px]");
+                    otherButton.setAttribute("aria-expanded", "false");
+                    otherButton
+                        .querySelector("svg")
+                        .classList.remove(
+                            "rotate-180",
+                            "text-(--color-red-400)",
+                        );
+                    otherButton
+                        .querySelector("svg")
+                        .classList.add("text-(--color-blue-600)");
+                }
+            });
+        }
+
+        targetBody.classList.toggle("max-h-[500px]");
         button.setAttribute("aria-expanded", !isExpanded);
+
+        svgIcon.classList.toggle("rotate-180");
+        svgIcon.classList.toggle("text-(--color-red-400)");
+        svgIcon.classList.toggle("text-(--color-blue-600)");
     });
 });

@@ -35,9 +35,7 @@
         </style>
     </head>
 
-    <body
-        class="relative mx-auto overflow-x-hidden font-primary text-(length:--font-body)"
-    >
+    <body class="relative mx-auto font-primary text-(length:--font-body)">
         <header class="container mx-auto px-4 pt-8 pb-16 md:pt-0 md:pb-0">
             <nav class="flex items-center justify-between md:flex-row">
                 <a href="/" title="Home">
@@ -175,19 +173,23 @@
             </nav>
         </header>
 
-        <main class="container mx-auto flex flex-col gap-32 px-4 lg:gap-40">
+        <main
+            class="container mx-auto mt-0 flex flex-col gap-32 px-4 md:mt-16 lg:gap-40"
+        >
             <!-- hero section -->
             <section
-                class="flex flex-col items-center gap-16 xl:flex-row-reverse xl:justify-center"
+                class="-mx-4 flex flex-col items-center gap-16 overflow-x-hidden xl:flex-row-reverse xl:justify-center"
             >
-                <div
-                    class="relative flex w-full items-center justify-center after:absolute after:right-0 after:-bottom-3 after:-z-1 after:-mr-4 after:h-55 after:w-75 after:rounded-l-full after:bg-(--color-blue-600) after:text-red-500 after:content-[''] sm:after:-bottom-0 sm:after:-mr-40 sm:after:h-85 sm:after:w-full lg:after:-bottom-0 lg:after:-mr-4 lg:after:w-165 xl:after:-right-0 xl:after:-bottom-5 xl:after:-mr-4 xl:after:w-165 2xl:after:-mr-60 2xl:after:w-full"
-                >
+                <div class="relative flex w-full items-center justify-center">
                     <img
                         class="h-auto max-w-full"
                         src="/images/illustrations/illustration-hero.svg"
                         alt="tablet view of app"
                     />
+
+                    <div
+                        class="absolute right-[-40%] bottom-0 -z-1 h-[70%] min-h-[150px] w-[120%] rounded-l-full bg-(--color-blue-600)"
+                    ></div>
                 </div>
 
                 <div
@@ -278,13 +280,13 @@
                     </ul>
                 </div>
 
-                <div id="tab-content-wrapper">
+                <div id="tab-content-wrapper" class="-mx-4 2xl:w-full">
                     <!-- tab-1 -->
                     <div
                         class="flex flex-col items-center gap-24 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
                         id="bookmarking"
                     >
-                        <div
+                        <!-- <div
                             class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-35 lg:before:-ml-4 lg:before:w-165 xl:before:-ml-16 xl:before:w-135"
                         >
                             <img
@@ -292,6 +294,20 @@
                                 src="/images/illustrations/illustration-features-tab-1.svg"
                                 alt="tablet view of app"
                             />
+                        </div> -->
+
+                        <div
+                            class="relative flex w-full items-center justify-center"
+                        >
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-1.svg"
+                                alt="tablet view of app"
+                            />
+
+                            <div
+                                class="-ml-[2 0vw] absolute -bottom-10 left-0 -z-10 h-[50vw] w-[100vw] rounded-r-full bg-(--color-blue-600) text-red-500 sm:-bottom-15 sm:-ml-[20vw] sm:h-[50vw] sm:w-[100vw] md:-bottom-20 md:-ml-[30vw] md:h-[45vw] md:w-[100vw] lg:-bottom-20 lg:-ml-[10vw] lg:h-[30vw] lg:w-[80vw] xl:-bottom-20 xl:-left-0 xl:-ml-[10vw] xl:h-[25vw] xl:w-[40vw] 2xl:-bottom-20 2xl:-ml-60 2xl:h-[20vw] 2xl:w-full"
+                            ></div>
                         </div>
 
                         <div
@@ -326,7 +342,7 @@
                         class="pointer-events-none absolute top-0 left-0 flex scale-95 flex-col items-center gap-24 opacity-0 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
                         id="searching"
                     >
-                        <div
+                        <!-- <div
                             class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-60 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
                         >
                             <img
@@ -334,6 +350,20 @@
                                 src="/images/illustrations/illustration-features-tab-2.svg"
                                 alt="tablet view of app"
                             />
+                        </div> -->
+
+                        <div
+                            class="relative flex w-full items-center justify-center"
+                        >
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-2.svg"
+                                alt="tablet view of app"
+                            />
+
+                            <div
+                                class="-ml-[2 0vw] absolute -bottom-10 left-0 -z-10 h-[50vw] w-[100vw] rounded-r-full bg-(--color-blue-600) text-red-500 sm:-bottom-15 sm:-ml-[20vw] sm:h-[50vw] sm:w-[100vw] md:-bottom-20 md:-ml-[30vw] md:h-[45vw] md:w-[100vw] lg:-bottom-20 lg:-ml-[10vw] lg:h-[30vw] lg:w-[80vw] xl:-bottom-20 xl:-left-0 xl:-ml-[10vw] xl:h-[25vw] xl:w-[40vw] 2xl:-bottom-20 2xl:-ml-60 2xl:h-[20vw] 2xl:w-full"
+                            ></div>
                         </div>
 
                         <div
@@ -367,7 +397,7 @@
                         class="pointer-events-none absolute top-0 left-0 flex scale-95 flex-col items-center gap-24 opacity-0 transition-all duration-300 ease-in-out sm:gap-30 xl:flex-row"
                         id="sharing"
                     >
-                        <div
+                        <!-- <div
                             class="relative flex w-full justify-center before:absolute before:-bottom-10 before:left-0 before:-z-1 before:-ml-10 before:h-55 before:w-75 before:rounded-r-full before:bg-(--color-blue-600) after:content-[''] sm:before:-bottom-15 sm:before:-ml-24 sm:before:h-full sm:before:w-full md:before:-ml-50 lg:before:-ml-8 lg:before:w-165 xl:before:-ml-24 xl:before:w-135"
                         >
                             <img
@@ -375,6 +405,20 @@
                                 src="/images/illustrations/illustration-features-tab-3.svg"
                                 alt="tablet view of app"
                             />
+                        </div> -->
+
+                        <div
+                            class="relative flex w-full items-center justify-center"
+                        >
+                            <img
+                                class="h-auto w-85 max-w-full sm:w-auto"
+                                src="/images/illustrations/illustration-features-tab-3.svg"
+                                alt="tablet view of app"
+                            />
+
+                            <div
+                                class="-ml-[2 0vw] absolute -bottom-10 left-0 -z-10 h-[50vw] w-[100vw] rounded-r-full bg-(--color-blue-600) text-red-500 sm:-bottom-15 sm:-ml-[20vw] sm:h-[50vw] sm:w-[100vw] md:-bottom-20 md:-ml-[30vw] md:h-[45vw] md:w-[100vw] lg:-bottom-20 lg:-ml-[10vw] lg:h-[30vw] lg:w-[80vw] xl:-bottom-20 xl:-left-0 xl:-ml-[10vw] xl:h-[25vw] xl:w-[40vw] 2xl:-bottom-20 2xl:-ml-60 2xl:h-[20vw] 2xl:w-full"
+                            ></div>
                         </div>
 
                         <div
@@ -559,185 +603,196 @@
                 <div
                     id="accordion-collapse"
                     data-accordion="collapse"
-                    class="mx-auto flex min-w-lg flex-col"
+                    class="flex max-w-lg flex-col text-left"
                 >
-                    <!-- Question 1 -->
-                    <h2 id="accordion-collapse-heading-1">
-                        <button
-                            type="button"
-                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
-                            data-accordion-target="#accordion-collapse-body-1"
-                            aria-expanded="true"
-                            aria-controls="accordion-collapse-body-1"
-                        >
-                            <span>What is Bookmark?</span>
-                            <svg
-                                data-accordion-icon
-                                class="h-3 w-5 shrink-0"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div class="w-full border-y border-gray-200">
+                        <!-- Question 1 -->
+                        <h2 id="accordion-collapse-heading-1">
+                            <button
+                                type="button"
+                                class="flex w-full cursor-pointer items-center justify-between py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                                data-accordion-target="#accordion-collapse-body-1"
+                                aria-expanded="true"
+                                aria-controls="accordion-collapse-body-1"
                             >
-                                <path
-                                    fill="none"
-                                    stroke="#5267DF"
-                                    stroke-width="3"
-                                    d="M1 1l8 8 8-8"
-                                />
-                            </svg>
-                        </button>
-                    </h2>
+                                <span>What is Bookmark?</span>
+                                <svg
+                                    data-accordion-icon
+                                    class="h-3 w-5 shrink-0 text-(--color-blue-600) transition-transform duration-300 ease-in-out"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
+                            </button>
+                        </h2>
 
-                    <!-- Answer 1 -->
-                    <div
-                        id="accordion-collapse-body-1"
-                        class="hidden max-w-lg"
-                        aria-labelledby="accordion-collapse-heading-1"
-                    >
-                        <div class="border border-b-0 border-gray-200 p-5">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Fusce tincidunt justo eget
-                                ultricies fringilla. Phasellus blandit ipsum
-                                quis quam ornare mattis.
-                            </p>
+                        <!-- Answer 1 -->
+                        <div
+                            id="accordion-collapse-body-1"
+                            class="max-h-0 max-w-lg overflow-hidden transition-all duration-500 ease-linear"
+                            aria-labelledby="accordion-collapse-heading-1"
+                        >
+                            <div class="py-5">
+                                <p
+                                    class="mb-2 text-gray-500 dark:text-gray-400"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Fusce tincidunt justo eget
+                                    ultricies fringilla. Phasellus blandit ipsum
+                                    quis quam ornare mattis.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Question 2 -->
-                    <h2 id="accordion-collapse-heading-2">
-                        <button
-                            type="button"
-                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
-                            data-accordion-target="#accordion-collapse-body-2"
-                            aria-expanded="false"
-                            aria-controls="accordion-collapse-body-2"
-                        >
-                            <span>How can I request a new browser?</span>
-                            <svg
-                                data-accordion-icon
-                                class="h-3 w-5 shrink-0"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div class="w-full border-b border-gray-200">
+                        <!-- Question 2 -->
+                        <h2 id="accordion-collapse-heading-2">
+                            <button
+                                type="button"
+                                class="flex w-full cursor-pointer items-center justify-between py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                                data-accordion-target="#accordion-collapse-body-2"
+                                aria-expanded="false"
+                                aria-controls="accordion-collapse-body-2"
                             >
-                                <path
-                                    fill="none"
-                                    stroke="#5267DF"
-                                    stroke-width="3"
-                                    d="M1 1l8 8 8-8"
-                                />
-                            </svg>
-                        </button>
-                    </h2>
+                                <span>How can I request a new browser?</span>
+                                <svg
+                                    data-accordion-icon
+                                    class="h-3 w-5 shrink-0 text-(--color-blue-600) transition-transform duration-300 ease-in-out"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
+                            </button>
+                        </h2>
 
-                    <!-- Answer 2 -->
-                    <div
-                        id="accordion-collapse-body-2"
-                        class="hidden max-w-lg"
-                        aria-labelledby="accordion-collapse-heading-2"
-                    >
+                        <!-- Answer 2 -->
                         <div
-                            class="border border-b-0 border-gray-200 p-5 dark:border-gray-700"
+                            id="accordion-collapse-body-2"
+                            class="max-h-0 max-w-lg overflow-hidden transition-all duration-500 ease-linear"
+                            aria-labelledby="accordion-collapse-heading-2"
                         >
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                Vivamus luctus eros aliquet convallis ultricies.
-                                Mauris augue massa, ultricies non ligula.
-                                Suspendisse imperdiet. Vivamus luctus eros
-                                aliquet convallis ultricies. Mauris augue massa,
-                                ultricies non ligula. Suspendisse imperdie
-                                tVivamus luctus eros aliquet convallis
-                                ultricies. Mauris augue massa, ultricies non
-                                ligula. Suspendisse imperdiet.
-                            </p>
+                            <div class="py-5">
+                                <p
+                                    class="mb-2 text-gray-500 dark:text-gray-400"
+                                >
+                                    Vivamus luctus eros aliquet convallis
+                                    ultricies. Mauris augue massa, ultricies non
+                                    ligula. Suspendisse imperdiet. Vivamus
+                                    luctus eros aliquet convallis ultricies.
+                                    Mauris augue massa, ultricies non ligula.
+                                    Suspendisse imperdie tVivamus luctus eros
+                                    aliquet convallis ultricies. Mauris augue
+                                    massa, ultricies non ligula. Suspendisse
+                                    imperdiet.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Question 3 -->
-                    <h2 id="accordion-collapse-heading-3">
-                        <button
-                            type="button"
-                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
-                            data-accordion-target="#accordion-collapse-body-3"
-                            aria-expanded="false"
-                            aria-controls="accordion-collapse-body-3"
-                        >
-                            <span>Is there a mobile app?</span>
-                            <svg
-                                data-accordion-icon
-                                class="h-3 w-5 shrink-0"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div class="w-full border-b border-gray-200">
+                        <!-- Question 3 -->
+                        <h2 id="accordion-collapse-heading-3">
+                            <button
+                                type="button"
+                                class="flex w-full cursor-pointer items-center justify-between py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                                data-accordion-target="#accordion-collapse-body-3"
+                                aria-expanded="false"
+                                aria-controls="accordion-collapse-body-3"
                             >
-                                <path
-                                    fill="none"
-                                    stroke="#5267DF"
-                                    stroke-width="3"
-                                    d="M1 1l8 8 8-8"
-                                />
-                            </svg>
-                        </button>
-                    </h2>
+                                <span>Is there a mobile app?</span>
+                                <svg
+                                    data-accordion-icon
+                                    class="h-3 w-5 shrink-0 text-(--color-blue-600) transition-transform duration-300 ease-in-out"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
+                            </button>
+                        </h2>
 
-                    <!-- Answer 3 -->
-                    <div
-                        id="accordion-collapse-body-3"
-                        class="hidden max-w-lg"
-                        aria-labelledby="accordion-collapse-heading-3"
-                    >
+                        <!-- Answer 3 -->
                         <div
-                            class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                            id="accordion-collapse-body-3"
+                            class="max-h-0 max-w-lg overflow-hidden transition-all duration-500 ease-linear"
+                            aria-labelledby="accordion-collapse-heading-3"
                         >
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                Sed consectetur quam id neque fermentum
-                                accumsan. Praesent luctus vestibulum dolor, ut
-                                condimentum urna vulputate eget. Cras in ligula
-                                quis est pharetra mattis sit amet pharetra
-                                purus. Sed sollicitudin ex et ultricies
-                                bibendum.
-                            </p>
+                            <div class="py-5">
+                                <p
+                                    class="mb-2 text-gray-500 dark:text-gray-400"
+                                >
+                                    Sed consectetur quam id neque fermentum
+                                    accumsan. Praesent luctus vestibulum dolor,
+                                    ut condimentum urna vulputate eget. Cras in
+                                    ligula quis est pharetra mattis sit amet
+                                    pharetra purus. Sed sollicitudin ex et
+                                    ultricies bibendum.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Question 4 -->
-                    <h2 id="accordion-collapse-heading-4">
-                        <button
-                            type="button"
-                            class="flex w-full cursor-pointer items-center justify-between border-b border-gray-200 py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
-                            data-accordion-target="#accordion-collapse-body-4"
-                            aria-expanded="false"
-                            aria-controls="accordion-collapse-body-3"
-                        >
-                            <span>What about other Chromium browsers?</span>
-                            <svg
-                                data-accordion-icon
-                                class="h-3 w-5 shrink-0"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div class="w-full border-b border-gray-200">
+                        <!-- Question 4 -->
+                        <h2 id="accordion-collapse-heading-4">
+                            <button
+                                type="button"
+                                class="flex w-full cursor-pointer items-center justify-between py-5 text-(--color-950) transition-colors duration-300 ease-in-out hover:text-(--color-red-400)"
+                                data-accordion-target="#accordion-collapse-body-4"
+                                aria-expanded="false"
+                                aria-controls="accordion-collapse-body-3"
                             >
-                                <path
-                                    fill="none"
-                                    stroke="#5267DF"
-                                    stroke-width="3"
-                                    d="M1 1l8 8 8-8"
-                                />
-                            </svg>
-                        </button>
-                    </h2>
+                                <span>What about other Chromium browsers?</span>
+                                <svg
+                                    data-accordion-icon
+                                    class="h-3 w-5 shrink-0 text-(--color-blue-600) transition-transform duration-300 ease-in-out"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        d="M1 1l8 8 8-8"
+                                    />
+                                </svg>
+                            </button>
+                        </h2>
 
-                    <!-- Answer 4 -->
-                    <div
-                        id="accordion-collapse-body-4"
-                        class="hidden max-w-lg"
-                        aria-labelledby="accordion-collapse-heading-4"
-                    >
+                        <!-- Answer 4 -->
                         <div
-                            class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                            id="accordion-collapse-body-4"
+                            class="max-h-0 max-w-lg overflow-hidden transition-all duration-500 ease-linear"
+                            aria-labelledby="accordion-collapse-heading-4"
                         >
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                Integer condimentum ipsum id imperdiet finibus.
-                                Vivamus in placerat mi, at euismod dui. Aliquam
-                                vitae neque eget nisl gravida pellentesque non
-                                ut velit.
-                            </p>
+                            <div class="py-5">
+                                <p
+                                    class="mb-2 text-gray-500 dark:text-gray-400"
+                                >
+                                    Integer condimentum ipsum id imperdiet
+                                    finibus. Vivamus in placerat mi, at euismod
+                                    dui. Aliquam vitae neque eget nisl gravida
+                                    pellentesque non ut velit.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -821,7 +876,9 @@
             <div
                 class="container mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row lg:justify-between"
             >
-                <div class="flex items-center gap-16">
+                <div
+                    class="flex flex-col items-center gap-8 lg:flex-row lg:gap-16"
+                >
                     <a href="/">
                         <svg
                             width="148"
