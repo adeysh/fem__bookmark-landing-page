@@ -1,4 +1,3 @@
-import { doc } from "prettier";
 import "./style.css";
 
 const toggleMenuBtn = document.getElementById("toggle-menu-btn");
