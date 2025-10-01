@@ -9,13 +9,13 @@ const tabContentPanes = document.querySelectorAll("#tab-content-wrapper > div");
 const accordionContainer = document.getElementById("accordion-collapse");
 const accordionButtons = document.querySelectorAll("[data-accordion-target]");
 
-toggleMenuBtn.addEventListener("click", (e) => {
+toggleMenuBtn.addEventListener("click", () => {
     toggleMenuBtn.classList.toggle("hidden");
     navLinks.classList.toggle("flex");
     navLinks.classList.toggle("hidden");
 });
 
-toggleMenuCloseBtn.addEventListener("click", (e) => {
+toggleMenuCloseBtn.addEventListener("click", () => {
     toggleMenuBtn.classList.toggle("hidden");
     navLinks.classList.toggle("flex");
     navLinks.classList.toggle("hidden");
